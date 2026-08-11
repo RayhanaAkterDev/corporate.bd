@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+    /* Font families */
+    --font-inter: "Inter", sans-serif;
+    --font-source-serif: "Source Serif 4", serif;
+
+    /* Theme Colors */
+    --color-primary: #0c335f;
+    --color-surface: #fafbfc;
+
+    --color-on-primary: #f8f8f8;
+
+    --color-accent: #efa831;
+    --color-accent-hover: #d99d35;
+
+    --color-dark: #0b121a;
+    --color-dark-muted: #4d5660;
+}
+
+/* common utilities */
+
+@utility flex-center {
+    @apply flex justify-center items-center;
+}
+@utility flex-between {
+    @apply flex justify-between items-center;
+}
+
+/* =================================== */
+
+html {
+    @apply scroll-smooth;
+}
+
+body {
+    @apply font-inter bg-surface text-dark;
+}
+
+.container {
+    @apply w-11/12 max-w-384 mx-auto;
+}
+
+.btn {
+    @apply transition-all ease-linear duration-300 px-4 py-2 rounded-lg border;
+}
+.btn-accent {
+    @apply border-accent bg-accent hover:bg-accent-hover;
+}
+.btn-outline {
+    @apply bg-transparent border-on-primary/40 hover:bg-surface/10 text-on-primary;
+}
+
+/* =================================== */
+
+/* Navbar */
+
+.navbarCTA {
+    @apply bg-primary text-on-primary text-sm font-bold rounded-lg px-4 py-2;
+}
+
+.mobileNavBar {
+    @apply p-2 border border-dark-muted/10 rounded-lg;
+}
+
+#mobileNav {
+    @apply border-t border-dark-muted/20 w-full;
+}
+
+#mobileNav > ul > li {
+    @apply p-3 hover:bg-primary/10 rounded-lg;
+}
+
+/* =================================== */
+
+/* Hero */
+.hero {
+    @apply h-screen bg-primary bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-size-[45px_45px] py-16 lg:py-28;
+}
+
+.hero-text > ul > li {
+    @apply flex items-center gap-2.5 text-sm text-on-primary;
+}
+
+.hero-text > ul > li > i {
+    @apply text-accent;
+}
+
+.hero-img-wrapper {
+    @apply relative;
+}
+
+.hero-img {
+    @apply aspect-4/3 overflow-hidden rounded-2xl border border-primary/10 shadow-2xl;
+}
+
+.hero-img > img {
+    @apply h-full w-full object-cover;
+}
+
+.hero-img-wrapper::after {
+    @apply content-[''] absolute -bottom-6 -right-6 hidden h-32 w-32 rounded-2xl bg-accent lg:block;
+}
