@@ -1,5 +1,17 @@
 import './style.css';
 
+const loadComponent = async (id, file) => {
+    const element = document.getElementById(id);
+
+    if (element) {
+        const response = await fetch(file);
+        element.innerHTML = await response.text();
+    }
+};
+
+loadComponent("header", "/src/components/header.html");
+loadComponent("footer", "/src/components/footer.html");
+
 // Mobile Navbar Functionality
 const mobileNavToggle = document.getElementById("mobileNavToggle");
 const mobileNav = document.getElementById("mobileNav");
