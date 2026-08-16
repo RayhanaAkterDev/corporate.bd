@@ -26,7 +26,177 @@
 
         <!-- Contact page code starts here -->
         <main>
-            <h1 class="text-3xl text-center">contact page testing with git branch</h1>
+            <div class="max-w-7xl mx-auto px-6 py-20">
+                <div class="max-w-3xl bg-blue-900 text-white">
+                    <p class="text-blue-300 text-sm mb-4">Get in touch</p>
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                        Contact our team
+                    </h1>
+                    <p class="text-lg text-blue-300 leading-8">
+                        Tell us a little about what you need. A senior consultant will respond
+                        within one business hour during working days.
+                    </p>
+                    <img
+                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+                        alt="Customer support team at Corporate.bd"
+                        class="w-full h-90 object-cover"
+                    />
+                </div>
+
+                <!-- Contact cards -->
+                <div class="max-w-7xl mx-auto px-6 py-16">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="rounded-2xl border border-gray-200 p-6">
+                            <h3 class="font-semibold text-lg mb-2">Call us</h3>
+                            <p class="text-gray-600">+880 1234 567890</p>
+                            <p class="text-gray-500 text-sm mt-2">Mon - Fri, 9:00 AM - 6:00 PM</p>
+                        </div>
+
+                        <div class="rounded-2xl border border-gray-200 p-6">
+                            <h3 class="font-semibold text-lg mb-2">Email us</h3>
+                            <p class="text-gray-600">contact@corporate.com</p>
+                            <p class="text-gray-500 text-sm mt-2">
+                                We usually respond within 24 hours
+                            </p>
+                        </div>
+
+                        <div class="rounded-2xl border border-gray-200 p-6">
+                            <h3 class="font-semibold text-lg mb-2">Visit us</h3>
+                            <p class="text-gray-600">Banani, Dhaka 1213</p>
+                            <p class="text-gray-500 text-sm mt-2">Corporate head office</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact form + office info -->
+                <section class="bg-gray-50 py-16">
+                    <div class="max-w-7xl mx-auto px-6">
+                        <div class="grid lg:grid-cols-2 gap-12">
+                            <!-- Form -->
+                            <div class="bg-white rounded-3xl border border-gray-200 p-8">
+                                <h2 class="text-3xl font-bold mb-2">Send us a message</h2>
+
+                                <p class="text-gray-600 mb-8">
+                                    Fill in the form and our team will get back to you as soon as
+                                    possible.
+                                </p>
+
+                                <form id="contactForm" class="space-y-6">
+                                    <!-- Name -->
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2"> Name </label>
+
+                                        <input
+                                            type="text"
+                                            required
+                                            class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                        />
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2">
+                                            Email address
+                                        </label>
+
+                                        <input
+                                            type="email"
+                                            required
+                                            class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                        />
+                                    </div>
+
+                                    <!-- Phone -->
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2">
+                                            Phone number
+                                        </label>
+
+                                        <input
+                                            type="tel"
+                                            class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                        />
+                                    </div>
+
+                                    <!-- Message -->
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2">
+                                            Message
+                                        </label>
+
+                                        <textarea
+                                            rows="6"
+                                            required
+                                            class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                        ></textarea>
+                                    </div>
+
+                                    <!-- Submit -->
+                                    <button
+                                        type="submit"
+                                        class="w-full rounded-xl bg-blue-800 px-6 py-3 text-white font-semibold"
+                                    >
+                                        Send message
+                                    </button>
+                                </form>
+
+                                <!-- Success message -->
+                                <p id="successMsg" class="hidden mt-6 text-blue-600 font-medium">
+                                    Thank you! Your message has been sent successfully.
+                                </p>
+                            </div>
+
+                            <!-- Office info -->
+                            <div class="space-y-6">
+                                <!-- Head Office -->
+                                <div class="bg-white rounded-3xl border border-gray-200 p-8">
+                                    <h3 class="text-2xl font-bold mb-6">Head office</h3>
+
+                                    <div class="space-y-5">
+                                        <!-- Address -->
+                                        <div>
+                                            <p class="text-sm text-gray-500 mb-1">Address</p>
+
+                                            <p class="text-gray-700">
+                                                House 12, Road 5, Banani, Dhaka 1213, Bangladesh
+                                            </p>
+                                        </div>
+
+                                        <!-- Phone -->
+                                        <div>
+                                            <p class="text-sm text-gray-500 mb-1">Phone</p>
+
+                                            <p class="text-gray-700">+880 1234 567890</p>
+                                        </div>
+
+                                        <!-- Email -->
+                                        <div>
+                                            <p class="text-sm text-gray-500 mb-1">Email</p>
+
+                                            <p class="text-gray-700">contact@corporate.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Map -->
+                                <div
+                                    class="bg-white rounded-3xl border border-gray-200 overflow-hidden"
+                                >
+                                    <div class="h-80 bg-gray-200">
+                                        <iframe
+                                            class="w-full h-full border-0"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.082729063548!2d90.4125!3d23.7808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ2JzUwLjkiTiA5M8KwMjQnNDUuMCJF!5e0!3m2!1sen!2sbd!4v1620000000000!5m2!1sen!2sbd"
+                                            allowfullscreen
+                                            loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
 
         <!-- Footer -->
