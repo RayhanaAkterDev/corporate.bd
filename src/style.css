@@ -43,6 +43,14 @@ body {
     @apply w-11/12 max-w-384 mx-auto;
 }
 
+.section-heading {
+    @apply mt-3 font-source-serif text-3xl font-bold tracking-tight md:text-4xl text-balance;
+}
+
+.section-description {
+    @apply mt-4 text-dark-muted leading-relaxed text-pretty;
+}
+
 .btn {
     @apply transition-all ease-linear duration-300 px-4 py-2 rounded-lg border;
 }
@@ -51,6 +59,10 @@ body {
 }
 .btn-outline {
     @apply bg-transparent border-on-primary/40 hover:bg-surface/10 text-on-primary;
+}
+
+.badge-accent {
+    @apply py-1 px-3 text-accent text-xs font-medium tracking-widest uppercase;
 }
 
 /* =================================== */
@@ -77,7 +89,7 @@ body {
 
 /* Hero */
 .hero {
-    @apply h-screen bg-primary bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-size-[45px_45px] py-16 lg:py-28;
+    @apply bg-primary bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-size-[45px_45px] py-16 lg:py-28;
 }
 
 .hero-text > ul > li {
@@ -102,4 +114,165 @@ body {
 
 .hero-img-wrapper::after {
     @apply content-[''] absolute -bottom-6 -right-6 hidden h-32 w-32 rounded-2xl bg-accent lg:block;
+}
+
+/* =================================== */
+
+/* Status Counts */
+
+.statusCount .grid-child {
+    @apply flex-center flex-col gap-1 font-source-serif px-4 py-10 border-b border-r last:border-r-0 border-dark-muted/15;
+}
+
+/*  border border-l-0 last:border-r-0 border-dark-muted/15  */
+
+.grid-child > h3 {
+    @apply text-3xl font-bold text-primary md:text-4xl;
+}
+
+.grid-child > p {
+    @apply text-xs uppercase tracking-wider text-dark-muted font-inter;
+}
+
+/* =================================== */
+
+/* Services */
+
+.service-card-container {
+    @apply mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.service-card {
+    @apply flex gap-4 rounded-2xl border border-dark-muted/10 p-6 hover:border-primary hover:shadow-lg last:bg-primary last:text-on-primary transition;
+}
+
+.card-icon {
+    @apply flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/5 text-primary group-hover:bg-primary group-hover:text-on-primary transition;
+}
+
+.service-card-primary .card-icon i {
+    @apply text-on-primary bg-surface/20 h-12 w-12 flex-center rounded-2xl;
+}
+
+.card-info {
+    @apply flex flex-1 flex-col;
+}
+
+.card-info h3 {
+    @apply font-serif text-xl font-semibold group-hover:text-primary  transition;
+}
+
+.card-info:last-child h3 {
+    @apply group-hover:text-on-primary;
+}
+
+.card-info p {
+    @apply mt-2 text-sm text-dark-muted leading-relaxed;
+}
+
+.card-info ul {
+    @apply mt-4 space-y-1.5;
+}
+
+.card-info ul > li {
+    @apply flex items-center gap-2 text-xs text-dark-muted;
+}
+
+.service-card-primary p,
+.service-card-primary ul > li {
+    @apply text-on-primary/80;
+}
+
+.card-btn {
+    @apply mt-auto pt-5 inline-flex items-center gap-1 text-sm font-medium text-primary;
+}
+
+.card-btn i {
+    @apply h-3.5 w-3.5 ml-1 group-hover:translate-x-0.5 transition;
+}
+
+/* =================================== */
+
+/* Why Corporate.bd */
+.whyCorporateBd-card-container {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-5 mt-8;
+}
+
+.whyCorporateBd-card-container i {
+    @apply flex h-9 w-9 items-center justify-center rounded-md bg-primary text-on-primary;
+}
+
+.whyCorporateBd-card-container h3 {
+    @apply mt-3 font-semibold;
+}
+
+.whyCorporateBd-card-container p {
+    @apply mt-1.5 text-sm text-dark-muted leading-relaxed;
+}
+/* =================================== */
+
+/* Engagement */
+.engagement-card-container {
+    @apply mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4;
+}
+
+.engagement-card {
+    @apply rounded-2xl border border-dark-muted/15 p-6;
+}
+
+.engagement-card span {
+    @apply font-source-serif text-4xl font-bold text-accent;
+}
+
+.engagement-card h3 {
+    @apply mt-4 font-serif text-lg font-semibold;
+}
+
+.engagement-card p {
+    @apply mt-2 text-sm text-dark-muted leading-relaxed;
+}
+/* =================================== */
+
+/* Client */
+.client-card-container {
+    @apply mt-12 grid gap-6 md:grid-cols-3;
+}
+
+.client-card-container figure {
+    @apply rounded-2xl border border-dark-muted/15 bg-surface p-6 shadow-sm;
+}
+
+.client-card-container figcaption {
+    @apply mt-5 border-t border-dark-muted/15 pt-4;
+}
+
+.client-card-container blockquote {
+    @apply text-sm leading-relaxed text-dark;
+}
+/* =================================== */
+
+/* Footer */
+.footer-icons a > i {
+    @apply flex h-9 w-9 items-center justify-center rounded-md bg-on-primary/10 hover:bg-accent hover:text-dark/80 transition;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    @apply font-source-serif font-semibold text-sm tracking-wide uppercase text-accent;
+}
+
+.footer-links ul > li > a {
+    @apply text-sm text-on-primary/75 hover:text-on-primary transition;
+}
+
+.footer-contact ul > li {
+    @apply flex items-start gap-2.5;
+}
+
+.footer-contact ul > li > .contact-icon {
+    @apply h-4 w-4 mt-0.5 shrink-0 text-accent;
+}
+
+.footer-btm {
+    @apply border-t border-on-primary/15;
 }

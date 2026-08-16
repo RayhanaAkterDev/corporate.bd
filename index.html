@@ -36,73 +36,552 @@
 
     <body>
         <!-- Header & Navbar -->
-        <div id="header"></div>
+        <div id="header" class="sticky top-0 z-50"></div>
 
         <!-- Main content starts from here -->
         <main>
+            <!-- Hero -->
             <section class="hero">
-                <div class="container grid lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center">
-                    <div class="hero-text">
-                        <span
-                            class="bg-accent/15 rounded-full py-1 px-3 text-accent text-xs font-medium tracking-widest uppercase"
-                        >
-                            <i class="fa-solid fa-wand-magic-sparkles mr-1"></i>
-                            Trusted since 2018</span
-                        >
-
-                        <h1
-                            class="mt-5 font-source-serif text-4xl font-bold leading-[1.1] tracking-tight text-balance md:text-5xl lg:text-6xl xl:text-7xl text-on-primary max-w-2xl"
-                        >
-                            Bangladesh's most complete partner for digital, legal & IT.
-                        </h1>
-
-                        <p
-                            class="mt-6 max-w-xl text-lg leading-relaxed text-on-primary/85 text-pretty"
-                        >
-                            From the day you register your domain to the day you scale across
-                            borders, Corporate.bd handles the digital infrastructure, web build,
-                            legal compliance, managed IT and SEO — under one accountable roof.
-                        </p>
-
-                        <div class="mt-8 flex flex-wrap items-center gap-3">
-                            <a href="/" target="_blank" class="btn btn-accent">
-                                Start your project
-                                <i class="fa-solid fa-arrow-right ml-2"></i>
-                            </a>
-
-                            <a href="tel:+880 1515-676635" class="btn btn-outline">
-                                <i class="fa-solid fa-phone mr-2"></i>
-                                +880 1515-676635</a
+                <div class="container">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+                        <!-- Hero Text Contents -->
+                        <div class="hero-text">
+                            <span class="badge-accent bg-accent/15 rounded-full">
+                                <i class="fa-solid fa-wand-magic-sparkles mr-1"></i>
+                                Trusted since 2018</span
                             >
+                            <h1
+                                class="mt-5 font-source-serif text-on-primary text-4xl font-bold leading-20 tracking-tight text-balance md:text-5xl lg:text-7xl max-w-2xl"
+                            >
+                                Bangladesh's most complete partner for digital, legal & IT.
+                            </h1>
+                            <p
+                                class="mt-6 max-w-xl text-lg leading-relaxed text-on-primary/85 text-pretty"
+                            >
+                                From the day you register your domain to the day you scale across
+                                borders, Corporate.bd handles the digital infrastructure, web build,
+                                legal compliance, managed IT and SEO — under one accountable roof.
+                            </p>
+                            <div class="mt-8 flex flex-wrap items-center gap-3">
+                                <a href="/" target="_blank" class="btn btn-accent">
+                                    Start your project
+                                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                                </a>
+                                <a href="tel:+880 1515-676635" class="btn btn-outline">
+                                    <i class="fa-solid fa-phone mr-2"></i>
+                                    +880 1515-676635</a
+                                >
+                            </div>
+                            <ul class="mt-10 grid gap-3 sm:grid-cols-2">
+                                <li>
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    RJSC, BTRC and NBR savvy
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    End-to-end digital + legal stack
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    Senior consultants on every project
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    Bangla & English support, 24/7
+                                </li>
+                            </ul>
                         </div>
 
-                        <ul class="mt-10 grid gap-3 sm:grid-cols-2">
-                            <li>
-                                <i class="fa-regular fa-circle-check"></i>
-                                RJSC, BTRC and NBR savvy
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-circle-check"></i>
-                                End-to-end digital + legal stack
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-circle-check"></i>
-                                Senior consultants on every project
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-circle-check"></i>
-                                Bangla & English support, 24/7
-                            </li>
-                        </ul>
+                        <!-- Hero Image Wrapper -->
+                        <div class="hero-img-wrapper">
+                            <div class="hero-img">
+                                <img
+                                    src="heroBanner.jpg"
+                                    alt="Corporate.bd consulting team collaborating in a Dhaka office"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Status Counts -->
+            <section class="statusCount">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    <!-- Client -->
+                    <div class="grid-child">
+                        <h3>500+</h3>
+                        <p>Clients served</p>
                     </div>
 
-                    <div class="hero-img-wrapper">
-                        <div class="hero-img">
-                            <img
-                                src="heroBanner.jpg"
-                                alt="Corporate.bd consulting team collaborating in a Dhaka office"
-                            />
+                    <!-- Project -->
+                    <div class="grid-child">
+                        <h3>1,200+</h3>
+                        <p>Projects delivered</p>
+                    </div>
+
+                    <!-- Countries -->
+                    <div class="grid-child">
+                        <h3>12+</h3>
+                        <p>Countries reached</p>
+                    </div>
+
+                    <!-- Team -->
+                    <div class="grid-child">
+                        <h3>60+</h3>
+                        <p>In-house team</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <section class="services py-20">
+                <div class="container">
+                    <!-- Service Heading -->
+                    <div class="lg:w-1/2">
+                        <span class="badge-accent pl-0!">What we do</span>
+                        <h2 class="section-heading">Five practices, one accountable team</h2>
+                        <p class="section-description pr-16">
+                            Most Bangladeshi businesses end up juggling five different vendors for
+                            their digital, legal and IT needs. We bring them under one roof with
+                            senior leadership and clear SLAs.
+                        </p>
+                    </div>
+
+                    <!-- Service Cards -->
+                    <div class="service-card-container">
+                        <!-- Card 1: Digital Infrastructure -->
+                        <div class="service-card group">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div class="card-info">
+                                <h3>Digital Infrastructure</h3>
+                                <p>The foundation your business runs on</p>
+                                <ul>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>
+                                        Official .bd Domain Registration, Corporate BTCL Services
+                                        for Global Brands
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span
+                                        >Professional Corporate Email Solutions in Bangladesh
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span
+                                        >High-Performance Enterprise Cloud Hosting
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>
+                                        Secure Your Website with Premium SSL Certificates in
+                                        Bangladesh
+                                    </li>
+                                </ul>
+                                <div class="card-btn">
+                                    <a href="#">
+                                        Explore infrastructure
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- Card 2: Web Development -->
+                        <div class="service-card group">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="card-info">
+                                <h3>Web Development</h3>
+                                <p>Websites and applications that grow your business</p>
+                                <ul>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>
+                                        Corporate website development in Bangladesh
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>Build
+                                        Your Online Empire with Our Ecommerce Solution
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>Custom
+                                        Web Application Development in Bangladesh
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>
+                                        Professional CMS Management: You Create, We Manage the rest
+                                    </li>
+                                </ul>
+                                <div class="card-btn">
+                                    <a href="#">
+                                        Explore web dev
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Legal Compliance -->
+                        <div class="service-card group">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </div>
+                            <div class="card-info">
+                                <h3>Best Legal Compliance & Managed Services in Bangladesh</h3>
+                                <p>Stay 100% compliant with Bangladesh business law</p>
+                                <ul>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>
+                                        Seamless Company Formation & Registration in Bangladesh
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span
+                                        >Fast-Track Trade License Registration in Bangladesh
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span
+                                        >Strategic Tax & VAT Consultancy in Bangladesh
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>
+                                        IP & Trademark Registration Services in Bangladesh
+                                    </li>
+                                </ul>
+                                <div class="card-btn">
+                                    <a href="#">
+                                        Explore legal
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: IT Services -->
+                        <div class="service-card group">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+                            <div class="card-info">
+                                <h3>Managed IT Services</h3>
+                                <p>Your outsourced IT department</p>
+                                <ul>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>
+                                        Comprehensive IT AMC Services in Bangladesh
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>Expert
+                                        Server Administration & Management in Bangladesh
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>Al
+                                        Automation
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>
+                                        Expert IT Consultancy Services | Tech Solutions for Business
+                                    </li>
+                                </ul>
+                                <div class="card-btn">
+                                    <a href="#">
+                                        Explore managed it
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5: SEO & Digital Marketing -->
+                        <div class="service-card group">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                            </div>
+                            <div class="card-info">
+                                <h3>SEO & Digital Marketing</h3>
+                                <p>Grow organic traffic that converts to revenue</p>
+                                <ul>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>
+                                        Dominate Local Search & Google Maps in Bangladesh|
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span
+                                        >High-Converting E-commerce & Product SEO Services in
+                                        Bangladesh
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>Content
+                                        Strategy
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>
+                                        Best Social Media Management Services in Bangladesh
+                                    </li>
+                                </ul>
+                                <div class="card-btn">
+                                    <a href="#">
+                                        Explore seo
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6: Custom Solution -->
+                        <div class="service-card service-card-primary group">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div class="card-info">
+                                <h3>Need a Custom Solution?</h3>
+                                <p>
+                                    Not sure which service fits your business? Talk to a senior
+                                    consultant for a free 30-minute discovery call.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>
+                                        Free 30-min consultation
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>Tailored
+                                        proposal in 48 hours
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>Bangla &
+                                        English support
+                                    </li>
+                                    <li>
+                                        <span class="h-1 w-1 rounded-full bg-accent"></span>
+                                        Serving SMEs across Bangladesh
+                                    </li>
+                                </ul>
+                                <div class="card-btn text-accent">
+                                    <a href="#">
+                                        Book a free call
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Corporate.bd -->
+            <section class="whyCorporateBd py-20 border-y border-dark-muted/15 bg-surface">
+                <div class="container grid gap-12 lg:grid-cols-2 lg:items-center">
+                    <!-- whyCorporateBd Image -->
+                    <div
+                        class="whyCorporateBd-img aspect-4/3 overflow-hidden rounded-2xl border border-dark-muted/15"
+                    >
+                        <img
+                            src="dhaka-skyline.jpg"
+                            alt="Dhaka-skyline image"
+                            class="object-cover"
+                        />
+                    </div>
+
+                    <!-- whyCorporateBd Text -->
+                    <div class="whyCorporateBd-text">
+                        <!-- whyCorporateBd Heading -->
+                        <div class="service-heading">
+                            <span class="badge-accent pl-0!">Why Corporate.bd</span>
+                            <h2 class="section-heading">
+                                Built specifically for the Bangladeshi business reality
+                            </h2>
+                            <p class="section-description">
+                                Generic agencies don't understand the nuance of dealing with RJSC
+                                filings, BTRC approvals, NBR returns and shifting compliance rules.
+                                We were founded in Dhaka, by practitioners who navigate this every
+                                day.
+                            </p>
+                        </div>
+
+                        <!-- Why Corporate.bd Cards -->
+                        <div class="whyCorporateBd-card-container">
+                            <!-- Card 1: One vendor, one bill -->
+                            <div>
+                                <i class="fa-solid fa-handshake"></i>
+                                <h3>One vendor, one bill</h3>
+                                <p>
+                                    Stop chasing five vendors. We coordinate domains, hosting, legal
+                                    and SEO under one project manager.
+                                </p>
+                            </div>
+
+                            <!-- Card 2: Senior-led delivery -->
+                            <div>
+                                <i class="fa-solid fa-award"></i>
+                                <h3>Senior-led delivery</h3>
+                                <p>
+                                    Every project is led by a senior consultant — not a junior
+                                    intermediary.
+                                </p>
+                            </div>
+
+                            <!-- Card 3: Local + global standards -->
+                            <div>
+                                <i class="fa-solid fa-globe"></i>
+                                <h3>Local + global standards</h3>
+                                <p>
+                                    We follow ISO-aligned processes while staying tuned to
+                                    Bangladesh-specific regulations.
+                                </p>
+                            </div>
+
+                            <!-- Card 4: Transparent pricing -->
+                            <div>
+                                <i class="fa-solid fa-sack-dollar"></i>
+                                <h3>Transparent pricing</h3>
+                                <p>
+                                    Fixed-fee proposals or clear hourly rates. No surprise invoices,
+                                    ever.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Engagement -->
+            <section class="engagement py-20">
+                <div class="container">
+                    <!-- Engagement Heading -->
+                    <div class="w-1/2">
+                        <span class="badge-accent pl-0!">Our engagement</span>
+                        <h2 class="section-heading">
+                            A proven, predictable
+                            <span class="block">path from idea to launch</span>
+                        </h2>
+                    </div>
+
+                    <!-- Engagement Cards -->
+                    <div class="engagement-card-container">
+                        <!-- Card 1: Discovery call -->
+                        <div class="engagement-card">
+                            <span>01</span>
+                            <h3>Discovery call</h3>
+                            <p>
+                                A 30-minute call to understand your business, goals and constraints.
+                            </p>
+                        </div>
+
+                        <!-- Card 2: Tailored proposal -->
+                        <div class="engagement-card">
+                            <span>02</span>
+                            <h3>Tailored proposal</h3>
+                            <p>
+                                A clear scope, timeline and fixed-fee proposal — usually within 48
+                                hours.
+                            </p>
+                        </div>
+
+                        <!-- Card 3: Delivery sprints -->
+                        <div class="engagement-card">
+                            <span>03</span>
+                            <h3>Delivery sprints</h3>
+                            <p>Two-week sprints with weekly demos and a single point of contact.</p>
+                        </div>
+
+                        <!-- Card 4: Go live & support -->
+                        <div class="engagement-card">
+                            <span>04</span>
+                            <h3>Go live & support</h3>
+                            <p>
+                                Launch readiness checks, training, and an SLA-backed support
+                                contract.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Client -->
+            <section class="client py-20 border-y border-dark-muted/15 bg-surface">
+                <div class="container">
+                    <!-- Client Heading -->
+                    <div class="lg:w-1/2">
+                        <span class="badge-accent pl-0!">Client voices</span>
+                        <h2 class="section-heading">
+                            Trusted by founders
+                            <span class="block">and CXOs across Bangladesh</span>
+                        </h2>
+                    </div>
+
+                    <!-- Client Cards -->
+                    <div class="client-card-container">
+                        <!-- Card 1: Tahmina Rahman -->
+                        <figure>
+                            <blockquote>
+                                "Corporate.bd took us from a single-page brochure to a full
+                                e-commerce platform with full legal compliance — all in under 90
+                                days."
+                            </blockquote>
+
+                            <figcaption>
+                                <p class="font-semibold text-sm">Tahmina Rahman</p>
+                                <p class="text-xs text-dark-muted">CEO, Riverine Apparels Ltd.</p>
+                            </figcaption>
+                        </figure>
+
+                        <!-- Card 2: Imran Hossain -->
+                        <figure>
+                            <blockquote>
+                                “Their managed IT and AI automation team has cut our back-office
+                                workload by nearly 40%. Best technology partner we have ever
+                                engaged.”
+                            </blockquote>
+
+                            <figcaption>
+                                <p class="font-semibold text-sm">Imran Hossain</p>
+                                <p class="text-xs text-dark-muted">Director, BD Logistics Group</p>
+                            </figcaption>
+                        </figure>
+
+                        <!-- Card 3: Sadia Karim -->
+                        <figure>
+                            <blockquote>
+                                “From trade license to product SEO, one team handled everything. The
+                                level of follow-through is unusual in this market.”
+                            </blockquote>
+
+                            <figcaption>
+                                <p class="font-semibold text-sm">Sadia Karim</p>
+                                <p class="text-xs text-dark-muted">CEO, Riverine Apparels Ltd.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Book Free Consultation -->
+            <section class="consultation py-16">
+                <div
+                    class="container rounded-3xl bg-primary text-on-primary px-6 py-12 md:px-12 md:py-16 lg:flex-between lg:flex-row flex-col"
+                >
+                    <!-- Consultation Heading -->
+                    <div class="lg:w-1/2">
+                        <h2 class="section-heading text-on-primary">
+                            Let's discuss your next move
+                        </h2>
+                        <p class="section-description text-on-primary/90! pr-20">
+                            Book a free 30-minute consultation. Walk away with a clear roadmap, even
+                            if you don't engage us.
+                        </p>
+                    </div>
+
+                    <!-- Consultation Buttons -->
+                    <div class="flex flex-wrap items-center gap-3 mt-8 lg:mt-0">
+                        <a href="/" target="_blank" class="btn btn-accent text-dark!">
+                            Book Free Consultation
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="tel:+880 1515-676635" class="btn btn-outline">
+                            <i class="fa-solid fa-phone mr-2"></i>
+                            +880 1515-676635</a
+                        >
                     </div>
                 </div>
             </section>
