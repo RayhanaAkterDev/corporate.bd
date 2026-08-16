@@ -1,16 +1,18 @@
-import './style.css';
+import "./style.css";
 
-const loadComponent = async (id, file) => {
+import header from "./components/header.html?raw";
+import footer from "./components/footer.html?raw";
+
+function loadComponent(id, content) {
     const element = document.getElementById(id);
 
     if (element) {
-        const response = await fetch(file);
-        element.innerHTML = await response.text();
+        element.innerHTML = content;
     }
-};
+}
 
-loadComponent("header", "/components/header.html");
-loadComponent("footer", "/components/footer.html");
+loadComponent("header", header);
+loadComponent("footer", footer);
 
 // Mobile Navbar Functionality
 const mobileNavToggle = document.getElementById("mobileNavToggle");
