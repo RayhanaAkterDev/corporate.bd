@@ -9,8 +9,8 @@ const loadComponent = async (id, file) => {
     }
 };
 
-loadComponent("header", "/src/components/header.html");
-loadComponent("footer", "/src/components/footer.html");
+loadComponent("header", "/components/header.html");
+loadComponent("footer", "/components/footer.html");
 
 // Mobile Navbar Functionality
 const mobileNavToggle = document.getElementById("mobileNavToggle");
